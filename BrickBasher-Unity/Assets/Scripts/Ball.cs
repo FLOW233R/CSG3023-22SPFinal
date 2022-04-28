@@ -2,8 +2,8 @@
  * Created by: Bob Baloney
  * Date Created: April 20, 2022
  * 
- * Last Edited by: 
- * Last Edited:
+ * Last Edited by: Siyu Yang
+ * Last Edited: April 28, 2022
  * 
  * Description: Controls the ball and sets up the intial game behaviors. 
 ****/
@@ -16,10 +16,10 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    [Header("General Settings")]
+    //[Header("General Settings")]
 
 
-    [Header("Ball Settings")]
+    //[Header("Ball Settings")]
    
 
 
@@ -57,14 +57,14 @@ public class Ball : MonoBehaviour
 
     void SetStartingPos()
     {
-        isInPlay = false;//ball is not in play
-        rb.velocity = Vector3.zero;//set velocity to keep ball stationary
+        //isInPlay = false;//ball is not in play
+        //rb.velocity = Vector3.zero;//set velocity to keep ball stationary
 
-        Vector3 pos = new Vector3();
-        pos.x = paddle.transform.position.x; //x position of paddel
-        pos.y = paddle.transform.position.y + paddle.transform.localScale.y; //Y position of paddle plus it's height
+        //Vector3 pos = new Vector3();
+        //pos.x = paddle.transform.position.x; //x position of paddel
+        //pos.y = paddle.transform.position.y + paddle.transform.localScale.y; //Y position of paddle plus it's height
 
-        transform.position = pos;//set starting position of the ball 
+        //transform.position = pos;//set starting position of the ball 
     }//end SetStartingPos()
 
 
